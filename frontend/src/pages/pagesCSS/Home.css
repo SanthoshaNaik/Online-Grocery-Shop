@@ -1,0 +1,105 @@
+/* html,body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+   
+}
+body.home-page
+{
+  background-image: url('C:\Users\Harshith N Naik\Desktop\Groceryapp\frontend\src\components\Assets\HomeImg.jpg');
+  background-size: cover; /* Makes the image cover the entire screen */
+  /*background-repeat: no-repeat; /* Prevents the image from repeating */
+  /*background-position: center; /* Centers the image */
+  
+  
+/*}
+
+body:not(.home-page) {
+    background: none;
+
+} */
+.home-page
+{
+  width: 100%;
+  min-height: 80.6vh;
+
+  /* background-color:rgb(142, 131, 131) ; */
+  background-image: url('../../components/Assets/HomeImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  display:flex;
+  justify-content: space-between;
+ 
+  
+}
+.homeText
+{
+    font-family:cursive;
+    font-size:60PX;
+    font-weight: bold;
+    color:black;
+    margin-left:18px;
+    
+    
+    
+}
+
+
+/* ...........................Button  */
+.hbtn
+{
+    background-color: #5d5d5d; /* Green background */
+    color: white; /* White text */
+    padding: 18px 48px; /* Padding for the button */
+    font-size: 16px; /* Text size */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left:18px;
+}
+
+.hbtn:hover
+{
+    background-color: #080808; /* Darker green on hover */
+  transform: translateY(-4px);
+}
+
+.hbtn:focus
+{
+    outline: 2px solid #d9d9d9; /* Add a focus outline */
+  outline-offset: 2px;
+}
+
+.hbtn:active
+{
+    background-color: #000000; /* Even darker green */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+    transform: translateY(0); /* No lift effect */
+}
+
+.section1
+{
+  width: 50%;
+  
+  
+  
+
+}
+
+.section2
+{
+  width: 50%;
+  /* height: 600px;
+  margin-top: 30px; */
+
+  text-align: center;
+  margin-top: 350px;
+  margin-left: 400px;
+  color: #5d5d5d;
+  font-family:cursive;
+
+}

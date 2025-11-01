@@ -1,0 +1,31 @@
+.contactus
+{
+    width: 100%;
+    min-height: 80.6vh;
+  
+    /* background-color:rgb(142, 131, 131) ; */
+    background-image: url('C:\Users\Harshith N Naik\Desktop\GroceryApp1\frontend\src\components\Assets\contactus.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin-top: 0px;
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.sec1
+{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.phoneno {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .phoneno img {
+    margin-right: 8px; /* Space between the icon and text */
+  }

@@ -1,0 +1,72 @@
+.Al-pr
+{
+    background-color: rgb(176, 176, 176);
+    margin-top: 0px;
+}
+
+.pr-head
+{
+    margin-top: 0%;
+    margin-left: 600px;
+}
+
+.wrapper
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin-top: 40px;
+
+  color: rgb(6, 6, 6);
+  gap: 20px;
+
+}
+
+.card
+{
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 6px 6px #f1f1f1;
+  text-align: center;
+  background-color: gray;
+  border: 1px solid black;
+  gap: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+
+  
+}
+
+.card:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: rgb(191, 191, 14);
+}
+
+.viewbtn
+{
+  
+
+    background-color: #454343; /* Green background */
+    color: white; /* White text */
+    padding: 14px 40px; /* Padding for the button */
+    font-size: 16px; /* Text size */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left:18px;
+    margin-top: 4px;
+}
+
+.viewbtn:hover
+{
+    background-color: #080808; /* Darker green on hover */
+  transform: translateY(-2px);
+  
+}
+
