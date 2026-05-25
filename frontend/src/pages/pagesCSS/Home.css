@@ -22,7 +22,8 @@ body:not(.home-page) {
 .home-page
 {
   width: 100%;
-  min-height: 80.6vh;
+  min-height: 86.6vh;
+  
 
   /* background-color:rgb(142, 131, 131) ; */
   background-image: url('../../components/Assets/HomeImg.jpg');
@@ -31,6 +32,8 @@ body:not(.home-page) {
   margin-top: 0px;
   display:flex;
   justify-content: space-between;
+  
+  
  
   
 }
