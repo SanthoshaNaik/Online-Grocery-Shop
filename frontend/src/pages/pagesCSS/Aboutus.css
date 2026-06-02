@@ -1,15 +1,25 @@
 .aboutus {
   width: 100%;
-  min-height: 86.6vh;
-  background-image: url('../../components/Assets/abotus.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 0px;
+  min-height: calc(100vh - 70px);
+  position: relative;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 40px;
+}
+
+.aboutus::before {
+  content: "";
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url('../../components/Assets/abotus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 .sect1 {
@@ -42,6 +52,10 @@
     padding: 20px;
   }
 
+  .aboutus::before {
+    background-position: 40% center; /* Better centering for portrait mobile screens */
+  }
+
   .sect1 {
     width: 100%;
     padding: 20px;
@@ -49,7 +63,7 @@
 
   .sec2 {
     width: 100%;
-    height: 150px; /* Spacer or small preview area */
+    height: 50px;
   }
 
   .about-text, .about-text2 {

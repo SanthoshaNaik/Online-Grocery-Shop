@@ -1,16 +1,26 @@
 .loginsignup {
   width: 100%;
-  min-height: 86.6vh;
-  background-image: url('../../components/Assets/HomeImg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 0px;
+  min-height: calc(100vh - 70px);
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
   padding: 40px;
+}
+
+.loginsignup::before {
+  content: "";
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-image: url('../../components/Assets/HomeImg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
 .loginsingup-container {
@@ -103,6 +113,10 @@
     justify-content: center;
     padding: 20px;
     gap: 30px;
+  }
+
+  .loginsignup::before {
+    background-position: 30% center;
   }
 
   .loginsingup-container {
