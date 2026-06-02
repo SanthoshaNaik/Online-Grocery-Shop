@@ -7,7 +7,7 @@
 }
 body.home-page
 {
-  background-image: url('C:\Users\Harshith N Naik\Desktop\Groceryapp\frontend\src\components\Assets\HomeImg.jpg');
+  background-image: url('../../components/Assets/HomeImg.jpg');
   background-size: cover; /* Makes the image cover the entire screen */
   /*background-repeat: no-repeat; /* Prevents the image from repeating */
   /*background-position: center; /* Centers the image */

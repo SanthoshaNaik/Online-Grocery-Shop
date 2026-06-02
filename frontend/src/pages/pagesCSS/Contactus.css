@@ -4,7 +4,7 @@
     min-height: 86.6vh;
   
     /* background-color:rgb(142, 131, 131) ; */
-    background-image: url('C:\Users\Harshith N Naik\Desktop\GroceryApp1\frontend\src\components\Assets\contactus.jpg');
+    background-image: url('../../components/Assets/contactus.jpg');
     background-repeat: no-repeat;
     background-size:100%;
     margin-top: 0px;
