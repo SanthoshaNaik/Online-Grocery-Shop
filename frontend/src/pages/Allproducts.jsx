@@ -1,12 +1,11 @@
-import React,{useEffect,useState} from 'react'
-import axios from "axios";
+import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import { sampleGroceries } from '../sampleGroceryData';
 import './pagesCSS/Allproducts.css'
 
 
 function Allproducts() {
-  const [products, setProducts] = useState(sampleGroceries);
+  const [products] = useState(sampleGroceries);
   console.log("var products",products)
   const navigateTo=useNavigate();
 

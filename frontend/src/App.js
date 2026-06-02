@@ -1,7 +1,7 @@
 
 import './App.css';
 import LoginSignup from './pages/LoginSignup.jsx';
-import cart from './pages/cart.jsx';
+import Cart from './pages/cart.jsx';
 
 
 import Home from './pages/Home.jsx';
@@ -30,7 +30,7 @@ function App() {
         <Route path='/LoginSignup' element={<LoginSignup/>} />
         <Route path='/products' element={<Allproducts/>} />
         <Route path='/details' element={<ProductDetails/>} />
-        <Route path='/Cart' element={<cart/>} />
+        <Route path='/Cart' element={<Cart/>} />
         <Route path='/Login' element={<Login/>} />
         <Route path='/contactus' element={<Contactus/>} />
         
