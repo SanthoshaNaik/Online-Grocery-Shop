@@ -3,6 +3,7 @@ import React from 'react';
 import {useLocation, useNavigate} from 'react-router-dom'
 import './pagesCSS/ProductDetails.css'
 import Swal from 'sweetalert2';
+import { API_BASE_URL } from '../config';
 
 function ProductDetails() {
     const data=useLocation();
@@ -36,7 +37,7 @@ function ProductDetails() {
         };
 
         
-        axios.post("http://localhost:4000/placeorder",orderData).then(
+        axios.post(`${API_BASE_URL}/placeorder`,orderData).then(
 
             (res)=>{console.log(res.data)
 

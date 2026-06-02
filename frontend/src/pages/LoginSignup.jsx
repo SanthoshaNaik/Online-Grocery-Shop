@@ -3,6 +3,7 @@ import './pagesCSS/LoginSignup.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
+import { API_BASE_URL } from '../config'
 
 function LoginSignup  ()  {
     const [name, setName] = useState()
@@ -12,7 +13,7 @@ function LoginSignup  ()  {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:4000/register',{name, email, password})
+        axios.post(`${API_BASE_URL}/register`,{name, email, password})
         .then(result=> {console.log(result)
             if(result.data === 'Registered') {
                 // alert("Registered Successfully")

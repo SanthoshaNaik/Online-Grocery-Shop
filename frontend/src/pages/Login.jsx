@@ -4,6 +4,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
+import { API_BASE_URL } from '../config'
 
 function Login() {
     const [email, setEmail] = useState()
@@ -12,7 +13,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:4000/Login',{email, password})
+        axios.post(`${API_BASE_URL}/Login`,{email, password})
 
         .then(result=> {console.log(result)
             if(result.data=== "Success!")

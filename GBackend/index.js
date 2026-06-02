@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
 import express, { urlencoded } from "express";
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // import UserModel from "./models/User";
 
@@ -10,7 +13,7 @@ app.use(urlencoded());
 app.use(express.json());
 
 //connecting with mongodb
-mongoose.connect("mongodb://localhost:27017/gross").then(
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/gross").then(
     (ack)=>{
         if(ack)
         console.log("Database connected Successfully!!");
@@ -163,4 +166,5 @@ app.post("/placeorder", (req,res)=>{
 
 
 // port creation for our server
-app.listen(4000,()=>{console.log("Server started at port 4000") });
+const PORT = process.env.PORT || 4000;
+app.listen(PORT,()=>{console.log(`Server started at port ${PORT}`) });
