@@ -1,25 +1,14 @@
 .contactus {
   width: 100%;
   min-height: calc(100vh - 70px);
-  position: relative;
+  background-image: url('../../components/Assets/contactus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 40px;
-}
-
-.contactus::before {
-  content: "";
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 70px);
-  background-image: url('../../components/Assets/contactus.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
 }
 
 .sec1 {
@@ -55,10 +44,7 @@
   .contactus {
     flex-direction: column;
     padding: 20px;
-  }
-
-  .contactus::before {
-    background-position: 45% center; /* Centering for mobile view */
+    background-position: 45% center;
   }
 
   .sec1 {
