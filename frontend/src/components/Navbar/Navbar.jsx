@@ -1,12 +1,29 @@
 import React, { useState } from 'react'
 import "./Navbar.css";
 //import "./App.css";
+import Swal from 'sweetalert2'
 
 import logo from '../Assets/GLogo.png'
 import cart_icon from '../Assets/cartLogo.png'
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+    const handleLogout = (e) => {
+        e.preventDefault();
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('usermail');
+        setMenuOpen(false);
+        Swal.fire({
+            title: "Logged Out Successfully",
+            icon: "success",
+            timer: 1500,
+            showConfirmButton: false
+        }).then(() => {
+            window.location.href = '/home';
+        });
+    };
 
     return (
         <div className='navBarWrapper'>
@@ -26,7 +43,11 @@ function Navbar() {
                 <a href='/about-us' className='links' onClick={() => setMenuOpen(false)}>About Us</a>
                 <a href="/contactus" className='links' onClick={() => setMenuOpen(false)}>Contact Us</a>
                 <a href='/products' className='links' onClick={() => setMenuOpen(false)}>Our Products</a>
-                <a href='/LoginSignup' className='links' onClick={() => setMenuOpen(false)}>Login</a>
+                {isLoggedIn ? (
+                    <a href='#logout' className='links' onClick={handleLogout}>Logout</a>
+                ) : (
+                    <a href='/LoginSignup' className='links' onClick={() => setMenuOpen(false)}>Login</a>
+                )}
             </div>
 
             <div className='nav-cart'>
