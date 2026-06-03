@@ -1,60 +1,53 @@
 .contactus {
   width: 100%;
   min-height: calc(100vh - 70px);
-  background-image: url('../../components/Assets/contactus.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: linear-gradient(135deg, #f6f8fb 0%, #e9edf3 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   padding: 40px;
 }
 
 .sec1 {
-  width: 45%;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-sizing: border-box;
 }
 
 .sec1 h1 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #333;
+  color: #2d3748; /* Slate gray */
+  text-align: center;
 }
 
 .sec1 p {
   font-size: 18px;
-  margin: 10px 0;
-  color: #555;
+  margin: 15px 0;
+  color: #4a5568; /* Slate gray */
+  line-height: 1.5;
 }
 
 .sect2 {
-  width: 50%;
+  display: none;
 }
 
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   .contactus {
-    flex-direction: column;
     padding: 20px;
-    background-position: 45% center;
   }
 
   .sec1 {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .sect2 {
-    width: 100%;
-    height: 50px;
+    padding: 30px 20px;
   }
 
   .sec1 h1 {

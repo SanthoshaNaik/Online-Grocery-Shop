@@ -1,29 +1,29 @@
 .aboutus {
   width: 100%;
   min-height: calc(100vh - 70px);
-  background-image: url('../../components/Assets/abotus.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: linear-gradient(135deg, #f6f8fb 0%, #e9edf3 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   padding: 40px;
 }
 
 .sect1 {
-  width: 50%;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .sec2 {
-  width: 45%;
+  display: none;
 }
 
 .about-text, .about-text2 {
@@ -37,19 +37,11 @@
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   .aboutus {
-    flex-direction: column;
     padding: 20px;
-    background-position: 40% center;
   }
 
   .sect1 {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .sec2 {
-    width: 100%;
-    height: 50px;
+    padding: 25px 20px;
   }
 
   .about-text, .about-text2 {
